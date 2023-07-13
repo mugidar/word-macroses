@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    background-color: #555;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+}
+
+textarea { 
+    padding: 10px;
+    resize: vertical;
+    height: 200px;
+    min-height: 200px;
+    max-height: 500px;
+    box-shadow: 0 0 5px;
+    background-color: rgb(214, 214, 214);
+}
+
+textarea::-webkit-resizer {
+    display: none;
+}
+
+.aliases {
+    display: flex;
+}
+
+ul > li {
+    list-style-type: none;
+    cursor: pointer;
+    color: rgb(0, 128, 226);
+    font-size: 24px;
+}
+ul > li:hover {
+    transition: .4s ;
+    color: rgba(99, 187, 255, 0.539);
+}
